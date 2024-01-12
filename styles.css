@@ -15,48 +15,27 @@
   --sunshine: #f7b733;
 }
 
-body {
-  background-color: var(--fresh);
-  color: var(--clean);
-  padding: 5%;
+.mainLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(75%, 1200px);
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+  gap: 5rem 0;
 }
 
-hr {
-  border-color: var(--verm);
-}
-
-.title h1 {
-  font-size: 3rem;
-  text-shadow: 2px 2px black;
-}
-
-.date {
-  text-shadow: 1px 1px black;
-}
-
-table {
-  border-collapse: collapse; /* Collapse cell borders */
-  width: 100%; /* Make the table fill its container */
-}
-
-th,
-td {
-  border: 1px solid black; /* Add a border to table header and data cells */
-  padding: 8px; /* Add space around the cell content */
-  text-align: left; /* Left-align text within cells */
-  background-color: var(--clean); /* Add a background color to table headers */
+.mainLinks a {
   color: black;
+  text-decoration: none;
 }
 
-th {
-  color: var(--sunshine);
-  background-color: var(--verm);
+.mainLinks a:hover {
+  text-decoration: underline;
 }
 
-.scheduleContent {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
+.heroTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
 }
