@@ -39,3 +39,12 @@
   text-align: center;
   margin-top: 3rem;
 }
+
+.categories {
+  margin-top: 3rem;
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  text-align: center;
+}
