@@ -77,10 +77,12 @@ if (dayOfWeek == 1) {
 }
 
 // we want to calculate the percentage and progress bar based on the number of calories left
-function updateProgressBar(value) {
-  value = Math.round(value / 3600);
-  document.querySelector(".progress_fill").style.width = `${value}%`;
-  document.querySelector(".progress_text").textContent = `${value}`;
+let left = 3600;
+function updateProgressBar(value, left) {
+  let widthPercentage = Math.round((value / 3600) * 100);
+  left -= value;
+  document.querySelector(".progress_fill").style.width = `${widthPercentage}%`;
+  document.querySelector(".progress_text").textContent = `${left}`;
 }
 
 const addButton = document.querySelector("button");
