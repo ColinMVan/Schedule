@@ -1,0 +1,12 @@
+.goalTitles {
+  display: flex;
+  justify-content: space-between;
+  width: min(80%, 1200px);
+  margin: 0 auto;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-weight: normal;
+}

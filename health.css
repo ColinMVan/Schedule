@@ -1,0 +1,36 @@
+.progress {
+  position: relative;
+  width: min(80%, 1200px);
+  height: 50px;
+  background-color: pink;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress_fill {
+  width: 0%;
+  height: 100%;
+  background-color: rgb(242, 78, 105);
+  transition: width 1500ms;
+}
+
+.progress_text {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+}
+
+.dailyGoal {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+button.add {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-left: 10rem;
+}

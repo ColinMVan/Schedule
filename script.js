@@ -75,3 +75,16 @@ if (dayOfWeek == 1) {
   events.innerHTML =
     "<tr> <td>6:00 AM</td> <td>Wake up / Shower</td> <td>Teter</td> </tr> <tr> <td>6:20 AM</td> <td>Get Ready</td> <td>Teter</td> </tr> <tr> <td>6:40 AM</td> <td>Study</td> <td>Teter</td> </tr> <tr> <td>7:00 AM</td> <td>Breakfast</td> <td>Forest</td> </tr> <tr> <td>8:00 AM</td> <td>Study</td> <td></td> </tr> <tr> <td>10:00 AM</td> <td>Second Breakfast</td> <td>Forest</td> </tr> <tr> <td>11:00 AM</td> <td>Walk to Class</td> <td></td> </tr> <tr> <td>11:30 AM</td> <td>Calculus</td> <td>Swain East - 105</td> </tr> <tr> <td>11:00 AM</td> <td>Walk to Class</td> <td></td> </tr> <tr> <td>11:30 AM</td> <td>Calculus</td> <td>Swain East - 105</td> </tr> <tr> <td>12:20 PM</td> <td>Walk to Class</td> <td></td> </tr> <tr> <td>12:40 PM</td> <td>Billiards</td> <td>IMU</td> </tr> <tr> <td>1:30 PM</td> <td>Lunch</td> <td></td> </tr> <tr> <td>2:30 PM</td> <td>Read</td> <td></td> </tr> <tr> <td>3:15 PM</td> <td>Gym</td> <td>SRSC</td> </tr> <tr> <td>4:45 PM</td> <td>Study</td> <td>Teter</td> </tr> <tr> <td>6:30 PM</td> <td>Dinner</td> <td>Forest</td> </tr> <tr> <td>8:00 PM</td> <td>Free Time</td> <td>Teter</td> </tr> <tr> <td>9:00 PM</td> <td>Shower / Get Ready for Bed</td> <td>Teter</td> </tr> ";
 }
+
+// we want to calculate the percentage and progress bar based on the number of calories left
+function updateProgressBar(value) {
+  value = Math.round(value / 3600);
+  document.querySelector(".progress_fill").style.width = `${value}%`;
+  document.querySelector(".progress_text").textContent = `${value}`;
+}
+
+const addButton = document.querySelector("button");
+addButton.addEventListener("click", function () {
+  // updateProgressBar(500);
+  console.log("this worked");
+});
