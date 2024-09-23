@@ -27,7 +27,6 @@
 }
 
 .mainLinks a {
-  color: black;
   text-decoration: none;
 }
 
@@ -41,8 +40,4 @@
   margin-top: 3rem;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.categories {
-  margin-top: 3rem;
 }
