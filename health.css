@@ -50,6 +50,7 @@ button.clearButton {
 
 .healthFunctions {
   display: flex;
+  flex-wrap: wrap;
   width: min(80%, 1200px);
   margin: 0 auto;
   justify-content: space-evenly;

@@ -131,3 +131,28 @@ clearButton.addEventListener("click", () => {
   updateProgressText(3600);
   localStorage.clear();
 });
+
+const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+// const ctx = document.getElementById("myChart");
+// new Chart(ctx, {
+//   type: "bar",
+//   data: {
+//     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+//     datasets: [
+//       {
+//         label: "# of Votes",
+//         data: [12, 19, 3, 5, 2, 3],
+//         borderWidth: 1,
+//       },
+//     ],
+//   },
+//   options: {
+//     scales: {
+//       y: {
+//         beginAtZero: true,
+//       },
+//     },
+//   },
+// });
