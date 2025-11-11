@@ -80,7 +80,7 @@
 // need to retrieve the total calorie amount in the local storage and then put that as the left variable
 
 function updateWidth(total) {
-  const widthPercentage = Math.round((total / 3600) * 100);
+  const widthPercentage = Math.round((total / 4000) * 100);
   document.querySelector(".progress_fill").style.width = `${widthPercentage}%`;
   if (widthPercentage > 95) {
     progressText.style.color = "white";
@@ -90,7 +90,7 @@ function updateWidth(total) {
   return widthPercentage;
 }
 
-let left = 3600;
+let left = 4000;
 let total = 0;
 const progressText = document.querySelector(".progress_text");
 if (localStorage.length > 0) {
@@ -128,7 +128,7 @@ const clearButton = document.querySelector(".clearButton");
 clearButton.addEventListener("click", () => {
   total = 0;
   updateWidth(total);
-  updateProgressText(3600);
+  updateProgressText(4000);
   localStorage.clear();
 });
 
